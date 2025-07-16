@@ -7,6 +7,6 @@ spec:
   templates:
     - name: whalesay
       container:
-        image: docker/whalesay
+        image: ghcr.io/cheesydev/whalesay:latest
         command: [cowsay]
-        args: ["Hello from Argo via Argo CD!"]
+        args: ["Hello from Argo on Kubernetes!"]
