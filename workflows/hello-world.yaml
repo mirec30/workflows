@@ -3,10 +3,10 @@ kind: WorkflowTemplate
 metadata:
   name: hello-world-template
 spec:
-  entrypoint: whalesay
+  entrypoint: say-hello
   templates:
-    - name: whalesay
+    - name: say-hello
       container:
-        image: ghcr.io/cheesydev/whalesay:latest
-        command: [cowsay]
-        args: ["Hello from Argo on Kubernetes!"]
+        image: alpine
+        command: ["echo"]
+        args: ["Hello from Argo!"]
